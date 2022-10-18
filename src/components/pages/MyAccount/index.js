@@ -31,23 +31,27 @@ function MyAccount(){
         <center>
             <div style={{paddingTop:"100px"}}>
                 <label htmlFor='nomeAccount'>Nome:</label><br/>
-                <input id='nomeAccount' type="text" value={dadosMinhaConta.nome} style={{...estilos.inputBackgroundColor}}></input>
+                <input id='nomeAccount' type="text" value={dadosMinhaConta?.nome} style={{...estilos.inputBackgroundColor}}></input>
                 <br/><br/>
                 {/*  */}
                 <label htmlFor='nomeAccount'>Sobrenome:</label><br/>
-                <input id='sobrenomeAccount' type="text" value={dadosMinhaConta.sobrenome} style={{...estilos.inputBackgroundColor}}></input>
+                <input id='sobrenomeAccount' type="text" value={dadosMinhaConta?.sobrenome} style={{...estilos.inputBackgroundColor}}></input>
                 <br/><br/>
                 {/*  */}
                 <label htmlFor='emailAccount'>Email:</label><br/>
-                <input id='emailAccount' type="text" value={dadosMinhaConta.email} style={{...estilos.inputBackgroundColor}}></input>
+                <input id='emailAccount' type="text" value={dadosMinhaConta?.email} style={{...estilos.inputBackgroundColor}}></input>
                 <br/><br/>
                 {/*  */}
                 <label htmlFor='organizacaoAccount'>Organizacao:</label><br/>
-                <input id='organizacaoAccount' type="text" value={dadosMinhaConta.organizacao} style={{...estilos.inputBackgroundColor}}></input>
+                <input id='organizacaoAccount' type="text" value={dadosMinhaConta?.organizacao} style={{...estilos.inputBackgroundColor}}></input>
                 <br/><br/>
                 {/*  */}
                 <label htmlFor='planoAccount'>Plano:</label><br/>
                 <input id='planoAccount' type="text" value={dadosMinhaConta?.plano?.tipo} style={{...estilos.inputBackgroundColor}}></input>
+                <br/><br/>
+                {/*  */}
+                <label htmlFor='qtdeRequestAccount'>Máximo de Requisições:</label><br/>
+                <input id='qtdeRequestAccount' type="text" value={dadosMinhaConta?.plano?.requisicoes} style={{...estilos.inputBackgroundColor}}></input>
                 <br/><br/>
                 {/*  */}
             </div>
