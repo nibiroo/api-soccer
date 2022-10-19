@@ -1,4 +1,5 @@
 import React from "react";
+import SideNavProps from "../SideNavProps";
 
 const SideNav = ()=> {
     return (
@@ -34,32 +35,32 @@ const SideNav = ()=> {
                         <li className="nav-item">
                             <a className="nav-link">
                                 <i className="nav-icon far fa-circle text-warning" />
-                                <a href="http://localhost:3000/highlightsChampionship" target="main-iframe">Highlights - Liga Estrangeira</a>
+                                <a href="http://localhost:3000/highlightsChampionship" target="main-iframe"><SideNavProps nameSideNavElement="Highlights - Liga Estrangeira"/></a>
                             </a>
                         </li>
                         <li className="nav-item">
                             <a href="#" className="nav-link">
                                 <i className="nav-icon far fa-circle text-warning" />
-                                <a href="http://localhost:3000/brazilianChampionship" target="main-iframe">Campeonato Brasileiro</a>
+                                <a href="http://localhost:3000/brazilianChampionship" target="main-iframe"><SideNavProps nameSideNavElement="Campeonato Brasileiro"/></a>
                             </a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link">
                                 <i className="nav-icon far fa-circle text-warning" />
-                                <a href="http://localhost:3000/scoreChampionship" target="main-iframe">Tabela</a>
+                                <a href="http://localhost:3000/scoreChampionship" target="main-iframe"><SideNavProps nameSideNavElement="Tabela"/></a>
                             </a>
                         </li>
                         <li className="nav-item">
                             <a href="#" className="nav-link">
                                 <i className="nav-icon far fa-circle text-warning" />
-                                <a href="http://localhost:3000/footballersBrazilCup" target="main-iframe">Artilharia da Copa Brasil</a>
+                                <a href="http://localhost:3000/footballersBrazilCup" target="main-iframe"><SideNavProps nameSideNavElement="Artilharia da Copa Brasil"/></a>
                             </a>
                         </li>
                         <li className="nav-header">Account</li>
                         <li className="nav-item">
                             <a className="nav-link">
                                 <i className="nav-icon far fa-circle text-warning" />
-                                <a href="http://localhost:3000/myAccount" target="main-iframe">My Account</a>
+                                <a href="http://localhost:3000/myAccount" target="main-iframe"><SideNavProps nameSideNavElement="My Account"/></a>
                             </a>
                         </li>
                     </ul>
